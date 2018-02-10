@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.sample.test.MainActivity"
+    android:background="@drawable/main2"
+       >
+
+    <Button
+        android:id="@+id/name"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temp"
+        android:layout_marginBottom="28dp"
+        android:layout_toEndOf="@+id/hi"
+        android:layout_toRightOf="@+id/hi"
+        android:backgroundTint="#e6e768"
+        android:text="NAME"
+        android:textColor="#7c5327" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toLeftOf="@+id/name"
+        android:layout_toStartOf="@+id/name"
+        android:ems="10"
+        android:hint="Name your plant"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <ImageButton
+        android:id="@+id/temp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/moist"
+        android:background="@drawable/temp"
+        android:contentDescription="Suhu" />
+
+    <ImageButton
+        android:id="@+id/moist"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/moist"
+        android:contentDescription="moist" />
+
+    <ImageButton
+        android:id="@+id/light"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/temp"
+        android:background="@drawable/light"
+        android:contentDescription="light" />
+
+    <ImageButton
+        android:id="@+id/sched"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/light"
+        android:background="@drawable/sked"
+        android:contentDescription="sched" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/info"
+        android:contentDescription="info" />
+
+    <TextView
+        android:id="@+id/Mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="no connection"
+        android:textColor="#7c5327"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/Plantname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:layout_centerHorizontal="true"
+        android:text="(I don't have any name yet)"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Plantname"
+        android:layout_centerHorizontal="true"
+        android:text="Hi, I'm"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Mood"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_toLeftOf="@+id/Plantname"
+        android:layout_toStartOf="@+id/Plantname"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/wifi3" />
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mood"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#FF0000"/>
+
+</RelativeLayout>
